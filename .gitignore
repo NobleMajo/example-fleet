@@ -1,0 +1,7 @@
+.store
+node_modules
+dist
+core
+
+!.keep
+!.gitkeep

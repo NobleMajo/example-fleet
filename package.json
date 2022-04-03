@@ -1,0 +1,15 @@
+{
+  "name": "cunet-fleet",
+  "version": "1.0.0",
+  "description": "The coreunit.net container infrastructure for fleetform.",
+  "main": "dist/index.js",
+  "scripts": {},
+  "author": "CoreUnit.NET",
+  "license": "UNLICENCED",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "fleetform": "^1.4.2",
+    "typescript": "^4.6.3"
+  }
+}
