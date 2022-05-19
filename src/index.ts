@@ -39,7 +39,7 @@ export const container: ContainerMapOptions = {
             "static.coreunit.net=STATIC:/var/www/html",
             "calc.coreunit.net=STATIC:/var/www/calc",
         ],
-    },
+    }
 }
 
 export const backup: ContainerMapOptions = {
@@ -49,6 +49,16 @@ export const backup: ContainerMapOptions = {
         networks: [
             "cunet",
         ],
+    },
+    test: {
+        enabled: false,
+        image: "dorowu/ubuntu-desktop-lxde-vnc",
+        networks: [
+            "cunet"
+        ],
+        volumes: {
+            "/home/codec/ws/test/home": "/home",
+        },
     },
     nginx_test2: {
         enabled: false,
